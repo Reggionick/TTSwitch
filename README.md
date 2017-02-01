@@ -8,8 +8,7 @@ you want. It also adds block support when the switch value is changed.
 The switch also supports UIAppearance. You can globally setup all the TTSwitch appeareance and then anytime
 you create an instance it will already be styled.
 
-<img src="https://raw.github.com/twotoasters/TTSwitch/master/Resources/switches_on.png" height="50%" /> &nbsp;
-<img src="https://raw.github.com/twotoasters/TTSwitch/master/Resources/switches_off.png" height="50%" />
+<img src="https://www.dropbox.com/s/e9dxp9dhgmi39vg/Preview.gif?dl=1" height="50%" /> &nbsp;
 
 ## Getting Started
 
@@ -100,7 +99,7 @@ roundLabelSwitch.offLabel.textColor = [UIColor redColor];
 
 ## Credits
 
-TTSwitch was created by [Scott Penrose](https://github.com/spenrose/)([@scottpenrose](http://twitter.com/scottpenrose)) and [Two Toasters](https://github.com/twotoasters)([@twotoasters](http://twitter.com/twotoasters)) in the development of [Go Try It On](http://www.gotryiton.com/).
+TTSwitch was created by [Scott Penrose](https://github.com/spenrose/)([@scottpenrose](http://twitter.com/scottpenrose)) and [Two Toasters](https://github.com/twotoasters)([@twotoasters](http://twitter.com/twotoasters)). This is an improvement developed by [Nicola Reggiani](https://github.com/Reggionick).
 
 ## License
 
