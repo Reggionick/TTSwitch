@@ -17,6 +17,10 @@
 		0D053FCF1706320A00D56ED9 /* switchToggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FC71706320A00D56ED9 /* switchToggle@2x.png */; };
 		0D053FD21706344B00D56ED9 /* switchToggleHigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FD01706344B00D56ED9 /* switchToggleHigh.png */; };
 		0D053FD31706344B00D56ED9 /* switchToggleHigh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FD11706344B00D56ED9 /* switchToggleHigh@2x.png */; };
+		B37C1F4A1E41E1F000A4D0A3 /* round-switch-thumb-off.png in Resources */ = {isa = PBXBuildFile; fileRef = B37C1F461E41E1F000A4D0A3 /* round-switch-thumb-off.png */; };
+		B37C1F4B1E41E1F000A4D0A3 /* round-switch-thumb-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B37C1F471E41E1F000A4D0A3 /* round-switch-thumb-off@2x.png */; };
+		B37C1F4C1E41E1F000A4D0A3 /* round-switch-thumb-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B37C1F481E41E1F000A4D0A3 /* round-switch-thumb-on.png */; };
+		B37C1F4D1E41E1F000A4D0A3 /* round-switch-thumb-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B37C1F491E41E1F000A4D0A3 /* round-switch-thumb-on@2x.png */; };
 		D2000F61166D01EB00903E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F60166D01EB00903E17 /* UIKit.framework */; };
 		D2000F63166D01EB00903E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F62166D01EB00903E17 /* Foundation.framework */; };
 		D2000F65166D01EB00903E17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F64166D01EB00903E17 /* CoreGraphics.framework */; };
@@ -69,6 +73,10 @@
 		0D053FC71706320A00D56ED9 /* switchToggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggle@2x.png"; sourceTree = "<group>"; };
 		0D053FD01706344B00D56ED9 /* switchToggleHigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchToggleHigh.png; sourceTree = "<group>"; };
 		0D053FD11706344B00D56ED9 /* switchToggleHigh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggleHigh@2x.png"; sourceTree = "<group>"; };
+		B37C1F461E41E1F000A4D0A3 /* round-switch-thumb-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round-switch-thumb-off.png"; path = "TTSwitch-Example/Images/Round/round-switch-thumb-off.png"; sourceTree = SOURCE_ROOT; };
+		B37C1F471E41E1F000A4D0A3 /* round-switch-thumb-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round-switch-thumb-off@2x.png"; path = "TTSwitch-Example/Images/Round/round-switch-thumb-off@2x.png"; sourceTree = SOURCE_ROOT; };
+		B37C1F481E41E1F000A4D0A3 /* round-switch-thumb-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round-switch-thumb-on.png"; path = "TTSwitch-Example/Images/Round/round-switch-thumb-on.png"; sourceTree = SOURCE_ROOT; };
+		B37C1F491E41E1F000A4D0A3 /* round-switch-thumb-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round-switch-thumb-on@2x.png"; path = "TTSwitch-Example/Images/Round/round-switch-thumb-on@2x.png"; sourceTree = SOURCE_ROOT; };
 		D2000F5D166D01EB00903E17 /* TTSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2000F60166D01EB00903E17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2000F62166D01EB00903E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -242,16 +250,20 @@
 		D2ACA213167B821200BC1D03 /* Round */ = {
 			isa = PBXGroup;
 			children = (
-				D2F70A5B16ED9AD5009221B5 /* round-switch-track-no-text.png */,
-				D2F70A5C16ED9AD5009221B5 /* round-switch-track-no-text@2x.png */,
-				D2C3344716823E79001E8327 /* round-switch-thumb-highlight.png */,
-				D2C3344816823E79001E8327 /* round-switch-thumb-highlight@2x.png */,
-				D2C3344916823E79001E8327 /* round-switch-thumb.png */,
-				D2C3344A16823E79001E8327 /* round-switch-thumb@2x.png */,
 				D234CC53167FA34B00B9BFE3 /* round-switch-mask.png */,
 				D234CC54167FA34B00B9BFE3 /* round-switch-mask@2x.png */,
 				D234CC55167FA34B00B9BFE3 /* round-switch-overlay.png */,
 				D234CC56167FA34B00B9BFE3 /* round-switch-overlay@2x.png */,
+				D2C3344716823E79001E8327 /* round-switch-thumb-highlight.png */,
+				D2C3344816823E79001E8327 /* round-switch-thumb-highlight@2x.png */,
+				B37C1F461E41E1F000A4D0A3 /* round-switch-thumb-off.png */,
+				B37C1F471E41E1F000A4D0A3 /* round-switch-thumb-off@2x.png */,
+				B37C1F481E41E1F000A4D0A3 /* round-switch-thumb-on.png */,
+				B37C1F491E41E1F000A4D0A3 /* round-switch-thumb-on@2x.png */,
+				D2C3344916823E79001E8327 /* round-switch-thumb.png */,
+				D2C3344A16823E79001E8327 /* round-switch-thumb@2x.png */,
+				D2F70A5B16ED9AD5009221B5 /* round-switch-track-no-text.png */,
+				D2F70A5C16ED9AD5009221B5 /* round-switch-track-no-text@2x.png */,
 				D234CC57167FA34B00B9BFE3 /* round-switch-track.png */,
 				D234CC58167FA34B00B9BFE3 /* round-switch-track@2x.png */,
 			);
@@ -334,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2000F88166D021500903E17 /* Default-568h@2x.png in Resources */,
+				B37C1F4A1E41E1F000A4D0A3 /* round-switch-thumb-off.png in Resources */,
 				D2000F89166D021500903E17 /* Default.png in Resources */,
 				D2000F8A166D021500903E17 /* Default@2x.png in Resources */,
 				D2000F8B166D021500903E17 /* InfoPlist.strings in Resources */,
@@ -344,11 +357,14 @@
 				D234CC4F167FA33200B9BFE3 /* square-switch-track.png in Resources */,
 				D234CC50167FA33200B9BFE3 /* square-switch-track@2x.png in Resources */,
 				D234CC5B167FA34B00B9BFE3 /* round-switch-mask.png in Resources */,
+				B37C1F4B1E41E1F000A4D0A3 /* round-switch-thumb-off@2x.png in Resources */,
 				D234CC5C167FA34B00B9BFE3 /* round-switch-mask@2x.png in Resources */,
 				D234CC5D167FA34B00B9BFE3 /* round-switch-overlay.png in Resources */,
+				B37C1F4D1E41E1F000A4D0A3 /* round-switch-thumb-on@2x.png in Resources */,
 				D234CC5E167FA34B00B9BFE3 /* round-switch-overlay@2x.png in Resources */,
 				D234CC5F167FA34B00B9BFE3 /* round-switch-track.png in Resources */,
 				D234CC60167FA34B00B9BFE3 /* round-switch-track@2x.png in Resources */,
+				B37C1F4C1E41E1F000A4D0A3 /* round-switch-thumb-on.png in Resources */,
 				D2C3344316823E6F001E8327 /* square-switch-thumb-highlight.png in Resources */,
 				D2C3344416823E6F001E8327 /* square-switch-thumb-highlight@2x.png in Resources */,
 				D2C3344516823E6F001E8327 /* square-switch-thumb.png in Resources */,

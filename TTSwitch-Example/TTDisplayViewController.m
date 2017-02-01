@@ -64,6 +64,15 @@
     roundLabelSwitch.onLabel.textColor = [UIColor greenColor];
     roundLabelSwitch.offLabel.textColor = [UIColor redColor];
     
+    // Two thumb images
+    TTSwitch *twoThumbSwitch = [[TTSwitch alloc] initWithFrame:(CGRect){ CGPointZero, { 76.0f, 28.0f } }];
+    twoThumbSwitch.trackImage = [UIImage imageNamed:@"round-switch-track-no-text"];
+    twoThumbSwitch.thumbImage = [UIImage imageNamed:@"round-switch-thumb-on"];
+    twoThumbSwitch.thumbOffImage = [UIImage imageNamed:@"round-switch-thumb-off"];
+    [twoThumbSwitch setThumbMaskImage:nil];
+    twoThumbSwitch.thumbInsetX = -3.0f;
+    twoThumbSwitch.thumbOffsetY = -3.0f;
+
     // Fade mode
     TTFadeSwitch *fadeLabelSwitch = [[TTFadeSwitch alloc] initWithFrame:(CGRect){ CGPointZero, { 70.0f, 24.0f } }];
     fadeLabelSwitch.thumbImage = [UIImage imageNamed:@"switchToggle"];
@@ -100,6 +109,7 @@
         [TTControlItem itemWithTitle:@"Round" control:defaultSwitch],
         [TTControlItem itemWithTitle:@"Square" control:squareThumbSwitch],
         [TTControlItem itemWithTitle:@"Labels" control:roundLabelSwitch],
+        [TTControlItem itemWithTitle:@"Two thumbs" control:twoThumbSwitch],
         [TTControlItem itemWithTitle:@"Fade" control:fadeLabelSwitch],
         [TTControlItem itemWithTitle:@"Fade + Labels" control:fadeLabelSwitchLabel],
     ];
