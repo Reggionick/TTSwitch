@@ -8,7 +8,7 @@ you want. It also adds block support when the switch value is changed.
 The switch also supports UIAppearance. You can globally setup all the TTSwitch appeareance and then anytime
 you create an instance it will already be styled.
 
-<img src="https://www.dropbox.com/s/e9dxp9dhgmi39vg/Preview.gif?dl=1" height="50%" /> &nbsp;
+<img src="https://raw.github.com/Reggionick/TTSwitch/master/Resources/Preview.gif" height="50%" /> &nbsp;
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ Simply add the TTSwitch.h + TTSwitch.m files in the TTSwitch folder to your Xcod
 Add TTSwitch to your `Podfile` and `pod install`.
 
 ```ruby
-pod 'TTSwitch', '~> 0.0.5'
+pod 'TTSwitch', :git => 'https://github.com/Reggionick/TTSwitch.git'
 ```
 
 ## Resources
