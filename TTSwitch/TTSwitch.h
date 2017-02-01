@@ -73,6 +73,11 @@ typedef void(^TTSwitchChangeHandler)(BOOL on);
 @property (nonatomic, strong, readonly) UILabel *offLabel;
 
 /**
+ Use this property to lock the track image. If it's setted to YES the trackImageView will not scroll.
+ */
+@property (nonatomic, assign, getter=isTrackScrollLocked) BOOL trackScrollLocked;
+
+/**
  Adjust positioning of labels. It uses the right and left edge insets for the horizontal postitioning of label. The top and bottom edge insets will
  be used to determine the height of the labels. Setting this will cause the labels to be added to the switch.
  */

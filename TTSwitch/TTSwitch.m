@@ -84,6 +84,8 @@ static const CGFloat kTTSwitchAnimationDuration = 0.25;
     _trackMaskLayer = [CALayer layer];
     _trackMaskLayer.frame = self.bounds;
     
+    _trackScrollLocked = NO;
+    
     UIPanGestureRecognizer *thumbPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleThumbPanGesture:)];
     [thumbPanGestureRecognizer setMinimumNumberOfTouches:1];
     [_thumbImageView addGestureRecognizer:thumbPanGestureRecognizer];
@@ -314,7 +316,10 @@ static const CGFloat kTTSwitchAnimationDuration = 0.25;
 - (void)moveThumbCenterToX:(CGFloat)newThumbCenterX
 {
     [self.thumbImageView setCenter:(CGPoint){ newThumbCenterX, self.thumbImageView.center.y }];
-    [self.trackImageView setCenter:(CGPoint){ newThumbCenterX, self.trackImageView.center.y }];
+    if (!_trackScrollLocked) {
+        [self.trackImageView setCenter:(CGPoint){ newThumbCenterX, self.trackImageView.center.y }];
+    }
+    
 }
 
 - (void)didMoveThumbCenterToX:(CGFloat)newThumbCenterX
@@ -353,8 +358,10 @@ static const CGFloat kTTSwitchAnimationDuration = 0.25;
         newThumbFrame.origin.x = MIN(newThumbFrame.origin.x, self.bounds.size.width - thumbFrame.size.width - self.thumbInsetX);
         thumbImageView.frame = newThumbFrame;
         
-        CGFloat appliedTranslation = newThumbFrame.origin.x - thumbFrame.origin.x;
-        self.trackImageView.frame = CGRectOffset(self.trackImageView.frame, appliedTranslation, 0);
+        if (!_trackScrollLocked) {
+            CGFloat appliedTranslation = newThumbFrame.origin.x - thumbFrame.origin.x;
+            self.trackImageView.frame = CGRectOffset(self.trackImageView.frame, appliedTranslation, 0);
+        }
         
         if (CGRectContainsPoint(self.bounds, CGPointMake([gesture locationInView:self].x, 0))) {
             [gesture setTranslation:CGPointZero inView:thumbImageView];
