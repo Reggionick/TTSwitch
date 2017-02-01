@@ -181,6 +181,13 @@ static const CGFloat kTTSwitchAnimationDuration = 0.25;
     }
 }
 
+-(void) setOffThumbImage:(UIImage *)thumbOffImage{
+    if (_thumbOffImage != thumbOffImage) {
+        _thumbOffImage = thumbOffImage;
+        [self updateThumbPositionAnimated:NO];
+    }
+}
+
 - (void)setThumbInsetX:(CGFloat)thumbInsetX
 {
     _thumbInsetX = floorf(thumbInsetX);
@@ -318,7 +325,11 @@ static const CGFloat kTTSwitchAnimationDuration = 0.25;
     if (highlighted && self.thumbHighlightImage) {
         self.thumbImageView.image = self.thumbHighlightImage;
     } else {
-        self.thumbImageView.image = self.thumbImage;
+        if (!self.isOn && self.thumbOffImage) {
+            self.thumbImageView.image = self.thumbOffImage;
+        } else {
+            self.thumbImageView.image = self.thumbImage;
+        }
     }
 }
 
